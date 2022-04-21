@@ -1,0 +1,10 @@
+version: '3'
+services:
+  sqlserver:
+    image: "mcr.microsoft.com/mssql/server:2017-latest"
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "Drogan2@1"
+      MSSQL_PID: "Express"
+    ports:
+      - "1432:1432"
